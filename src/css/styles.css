@@ -21,6 +21,30 @@ p {
   font-size: 30px;
 }
 
+.green-block-and-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 40px;
+  padding-top: 50px;
+}
+.green-block-and-text .green-block {
+  width: 33px;
+  height: 4px;
+  margin-top: 22px;
+  background: #618967;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.green-block-and-text p {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
 * {
   margin: 0;
   padding: 0;
