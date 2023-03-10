@@ -1,8 +1,20 @@
 import '../css/styles.css'
 import { Establishments } from '../components/Establishments'
-import { useAppSelector } from '../hooks/hooks'
+import { useAppDispatch, useAppSelector } from '../hooks/hooks'
+import {useEffect} from 'react'
+import { uploadEstablishments } from '../store/redusers/establishments/establishmentsAction'
+
 export const HomePage = () => {
-    const establishments = useAppSelector((state) => state.establishments.establishments)
+    const establishments = useAppSelector((state) => state.establishments.establishments);
+    console.log(establishments);
+    
+
+    const dispatch = useAppDispatch();
+
+   useEffect(() => {
+    dispatch(uploadEstablishments())
+   },[dispatch])
+    
     return(
         <div className='main-unit'>
             <div className='green-block-and-text'>
@@ -11,9 +23,9 @@ export const HomePage = () => {
                     <p>топ заведений по отзывам</p>
                 </div>
             </div>
-            <div>
+            <div className='establishments'>
                 {establishments.map((item) => (
-                <Establishments establishments={item}/>
+                 <Establishments key={item._id} establishments={item}/>
                 ))}
             </div>
         </div>

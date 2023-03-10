@@ -1,12 +1,14 @@
-import { FC } from "react"
-import { IEstablishments } from "../types/IEstablishments"
+import { FC } from "react";
+import { IEstablishments } from "../types/IEstablishments";
+import '../css/styles.css'
 
 export const Establishments:FC<{establishments: IEstablishments}> = ({establishments}) => {
+
+    
     return(
         <div>
-            <div>
+            <div className="g">
                 <img src={establishments.image} alt="" />
-                <p>{establishments.name}</p>
             </div>
         </div>
     )

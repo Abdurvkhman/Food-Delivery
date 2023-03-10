@@ -7,7 +7,7 @@ const initialState: establishmentsState = {
     isLoading: false,
   };
 
-export const establishmentSlice = createSlice({
+export const establishmentsSlice = createSlice({
     name:"establishments",
     initialState,
     reducers:{},
@@ -22,4 +22,4 @@ export const establishmentSlice = createSlice({
     }
 }) 
 
-export default establishmentSlice.reducer;
+export default establishmentsSlice.reducer;

@@ -6,6 +6,6 @@ export const uploadEstablishments= createAsyncThunk(
     'establishments/post',
     async function () {
         const res = await baseService.get('/cafe');
-        return res.data
+        return res.data;
     }
 )

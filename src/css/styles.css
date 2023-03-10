@@ -45,6 +45,12 @@ p {
   text-transform: uppercase;
 }
 
+img {
+  width: 329px;
+  height: 220px;
+  border-radius: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
