@@ -29,6 +29,9 @@ export const HomePage = () => {
                  <Establishments key={item._id} establishments={item}/>
                 ))}
             </div>
+            <div>
+                
+            </div>
         </div>
     )
 }
