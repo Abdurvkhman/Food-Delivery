@@ -10,15 +10,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-span {
-  color: red;
-  font-size: 30px;
+* {
   font-family: "Gilroy";
 }
 
-p {
-  padding-top: 50px;
-  font-size: 30px;
+body {
+  background-color: #211F20;
+}
+
+.wrapper {
+  max-width: 1444px;
+  margin: auto;
 }
 
 .green-block-and-text {
@@ -26,12 +28,13 @@ p {
   display: -ms-flexbox;
   display: flex;
   padding-left: 40px;
-  padding-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 16px;
 }
 .green-block-and-text .green-block {
   width: 33px;
   height: 4px;
-  margin-top: 22px;
+  margin-top: 18px;
   background: #618967;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
@@ -43,8 +46,367 @@ p {
   line-height: 44px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: #FFFFFF;
 }
 
+img {
+  width: 329px;
+  height: 220px;
+  border-radius: 10px;
+}
+
+.delivery-terms {
+  padding-left: 90px;
+  padding-bottom: 137px;
+}
+.delivery-terms .green-second-block-and-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 16px;
+}
+.delivery-terms .green-second-block-and-text .green-block {
+  width: 33px;
+  height: 4px;
+  margin-top: 18px;
+  background: #618967;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.delivery-terms .green-second-block-and-text p {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.delivery-terms .accordion-and-map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.delivery-terms .accordion-and-map .delivery-terms-accordion {
+  margin-top: 42px;
+}
+.delivery-terms .accordion-and-map .delivery-terms-accordion .accordion {
+  margin-top: 10px;
+  background-color: #618967;
+  border-radius: 10px;
+  width: 618px;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  background: #494544;
+  border-bottom: 1px solid rgb(32, 31, 31);
+  border-left: 1px solid rgb(32, 31, 31);
+  border-right: 1px solid rgb(32, 31, 31) y;
+}
+.delivery-terms .accordion-and-map .delivery-terms-accordion .accordion > .accordion-toggle {
+  display: none;
+  position: absolute;
+  opacity: 0;
+}
+.delivery-terms .accordion-and-map .delivery-terms-accordion .accordion > label {
+  background-color: #618967;
+  display: block;
+  position: relative;
+  border-radius: 10px;
+  width: 618px;
+  height: 68px;
+  line-height: 50px;
+  padding: 0 20px;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.delivery-terms .accordion-and-map .delivery-terms-accordion .accordion > label:after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  -webkit-transition: 0.4s -webkit-transform;
+  transition: 0.4s -webkit-transform;
+  -o-transition: 0.4s transform;
+  transition: 0.4s transform;
+  transition: 0.4s transform, 0.4s -webkit-transform;
+}
+.delivery-terms .accordion-and-map .delivery-terms-accordion .accordion > section {
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.delivery-terms .accordion-and-map .delivery-terms-accordion .accordion > .accordion-toggle:checked ~ label:after {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 30px;
+}
+.delivery-terms .accordion-and-map .delivery-terms-accordion .accordion > .accordion-toggle:checked ~ section {
+  height: 220px;
+}
+.delivery-terms .accordion-and-map .delivery-terms-accordion .accordion > section p {
+  margin: 15px 0;
+  padding: 37px 41px;
+}
+.delivery-terms .accordion-and-map .delivery-terms-accordion p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #ffffff;
+}
+.delivery-terms .accordion-and-map .delivery-terms-map {
+  padding-top: 50px;
+  padding-left: 20px;
+}
+.delivery-terms .accordion-and-map .delivery-terms-map .map {
+  width: 640px;
+  height: 687px;
+}
+.delivery-terms .schedule {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 30px;
+}
+.delivery-terms .schedule .delivery-work-schedule .delivery-work-schedule-text {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 35px;
+  color: #FFFFFF;
+}
+.delivery-terms .schedule .delivery-work-schedule .delivery-work-schedule-time {
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 35px;
+  color: #FFFFFF;
+}
+.delivery-terms .schedule .cafe-opening-hours {
+  padding-left: 100px;
+}
+.delivery-terms .schedule .cafe-opening-hours .cafe-opening-hours-text {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 35px;
+  color: #FFFFFF;
+}
+.delivery-terms .schedule .cafe-opening-hours .cafe-opening-hours-time {
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 35px;
+  color: #FFFFFF;
+}
+.delivery-terms .minimum-order-and-delivery {
+  padding-top: 40px;
+  width: 697px;
+  height: 105px;
+}
+.delivery-terms .minimum-order-and-delivery .minimum-order {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 35px;
+  color: #FFFFFF;
+}
+.delivery-terms .minimum-order-and-delivery .free-shipping {
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 35px;
+  color: #CFCFCF;
+}
+
+@media only screen and (max-width: 376px) {
+  .delivery-terms {
+    padding-left: 0;
+    padding-bottom: 137px;
+    max-width: 346px;
+    margin: auto;
+    position: relative;
+  }
+  .delivery-terms .green-second-block-and-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 16px;
+  }
+  .delivery-terms .green-second-block-and-text .green-block {
+    width: 33px;
+    height: 4px;
+    margin-top: 18px;
+    background: #618967;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .delivery-terms .green-second-block-and-text p {
+    padding-top: 8px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  .delivery-terms .accordion-and-map {
+    display: block;
+    padding-top: 340px;
+  }
+  .delivery-terms .accordion-and-map .delivery-terms-accordion {
+    margin-top: 42px;
+  }
+  .delivery-terms .accordion-and-map .delivery-terms-accordion .accordion {
+    margin-top: 10px;
+    background-color: #618967;
+    border-radius: 10px;
+    width: 346px;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    background: #494544;
+    border-bottom: 1px solid rgb(32, 31, 31);
+    border-left: 1px solid rgb(32, 31, 31);
+    border-right: 1px solid rgb(32, 31, 31) y;
+  }
+  .delivery-terms .accordion-and-map .delivery-terms-accordion .accordion > .accordion-toggle {
+    display: none;
+    position: absolute;
+    opacity: 0;
+  }
+  .delivery-terms .accordion-and-map .delivery-terms-accordion .accordion > label {
+    background-color: #618967;
+    display: block;
+    position: relative;
+    border-radius: 10px;
+    width: 346px;
+    height: 74px;
+    line-height: 30px;
+    padding: 0 20px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .delivery-terms .accordion-and-map .delivery-terms-accordion .accordion > label:after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    -webkit-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+    -webkit-transition: 0.4s -webkit-transform;
+    transition: 0.4s -webkit-transform;
+    -o-transition: 0.4s transform;
+    transition: 0.4s transform;
+    transition: 0.4s transform, 0.4s -webkit-transform;
+  }
+  .delivery-terms .accordion-and-map .delivery-terms-accordion .accordion > section {
+    overflow: hidden;
+    height: 0;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  .delivery-terms .accordion-and-map .delivery-terms-accordion .accordion > .accordion-toggle:checked ~ label:after {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 30px;
+  }
+  .delivery-terms .accordion-and-map .delivery-terms-accordion .accordion > .accordion-toggle:checked ~ section {
+    height: 163px;
+  }
+  .delivery-terms .accordion-and-map .delivery-terms-accordion .accordion > section p {
+    margin: 15px 0;
+    padding: 26px 14px 22px 20px;
+  }
+  .delivery-terms .accordion-and-map .delivery-terms-accordion p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+  }
+  .delivery-terms .accordion-and-map .delivery-terms-map {
+    padding-top: 0;
+    padding-left: 0;
+  }
+  .delivery-terms .accordion-and-map .delivery-terms-map .map {
+    position: absolute;
+    top: 125px;
+    width: 346px;
+    height: 290px;
+  }
+  .delivery-terms .schedule {
+    display: block;
+    padding-top: 40px;
+  }
+  .delivery-terms .schedule .delivery-work-schedule .delivery-work-schedule-text {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 35px;
+    color: #FFFFFF;
+  }
+  .delivery-terms .schedule .delivery-work-schedule .delivery-work-schedule-time {
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 35px;
+    color: #FFFFFF;
+  }
+  .delivery-terms .schedule .cafe-opening-hours {
+    padding-left: 0;
+    padding-top: 15px;
+  }
+  .delivery-terms .schedule .cafe-opening-hours .cafe-opening-hours-text {
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 35px;
+    color: #FFFFFF;
+  }
+  .delivery-terms .schedule .cafe-opening-hours .cafe-opening-hours-time {
+    padding-top: 10px;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 35px;
+    color: #FFFFFF;
+  }
+  .delivery-terms .minimum-order-and-delivery {
+    padding-top: 15px;
+    width: 336px;
+    height: 100px;
+  }
+  .delivery-terms .minimum-order-and-delivery .minimum-order {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 35px;
+    color: #FFFFFF;
+  }
+  .delivery-terms .minimum-order-and-delivery .free-shipping {
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35px;
+    color: #CFCFCF;
+  }
+}
 * {
   margin: 0;
   padding: 0;
