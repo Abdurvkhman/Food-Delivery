@@ -1,8 +1,13 @@
-
+.wrapper{
+    max-width: 1444px;
+    margin: auto;
+}
 .green-block-and-text{
-    display: flex;
+   display: flex;
     padding-left: 40px;
     // padding-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 16px;
     .green-block{
         width: 33px;
         height: 4px;
@@ -17,6 +22,7 @@
         line-height: 44px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        // color: #FFFFFF;
+        color: #FFFFFF;
     }
 }
+
