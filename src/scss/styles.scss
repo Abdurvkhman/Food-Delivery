@@ -1,10 +1,11 @@
-@import '_index';
-@import '_App';
-@import '../assets/fonts/stylesheet.css';
-@import '_home-page';
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+@import '_index';
+@import '_App';
+@import '../assets/fonts/stylesheet.css';
+@import '_header';
+@import '_nav-menu';
