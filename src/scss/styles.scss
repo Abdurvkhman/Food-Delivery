@@ -1,14 +1,10 @@
-@import '_index';
-@import '_App';
-@import '../assets/fonts/stylesheet.css';
-@import '_home-page';
-@import '_establishments.scss';
-@import '_delivery-terms.scss';
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    // ::-webkit-scrollbar {
+    //     background-color: transparent
+    // }
 }
 
 @import '_index';
@@ -16,3 +12,6 @@
 @import '../assets/fonts/stylesheet.css';
 @import '_header';
 @import '_nav-menu';
+@import '_home-page';
+@import '_sections';
+@import '_delivery-terms.scss';

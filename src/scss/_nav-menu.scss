@@ -1,50 +1,94 @@
-.nav {
-    background-color: var(--off-white);
-    position: sticky;
-    top: 0px;
-    width: 100%;
-    height: 80px;
-    z-index: 1000;
-    box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
+.scroll-container {
+  max-width: 1290px;
+  color: white;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 13px;
+  .nav-menu {
+    color: #CFCFCF;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    flex-direction: row;
+    .nav-menu-item {
+      cursor: pointer;
+      &:not(:first-child) {
+        margin-left: 30px;
+      }
+      .active {
+        color: red;
+      }
+    }
   }
-  
-  .nav-logo {
-    height: 60px;
-    width: 60px;
+  .items {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      background-color: transparent;
+    }
   }
-  
-  .nav-logo:hover {
-    cursor: pointer;
-  }
-  
-  .nav .nav-content {
-    max-width: 900px;
-    padding: 0rem 3rem;
-    margin: 0 auto;
+  .second-item-inner {
+    margin-left: 50px;
+    background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+    border-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
+    padding: 16px 13px 20px 24px;
+    p {
+        font-weight: 600;
+        color: white;
+        background-color: transparent;
+    }
+    hr {
+        transform: rotate(90deg);
+        width: 38px;
+        height: 0;
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .first-hr {
+        display: none;
+    }
+    .ellipse {
+        width: 24px;
+        height: 24px;
+        border-radius: 100%;
+        background-color: white;
+        text-align: center;
+        color: #403C3B;
+        font-weight: 600;
+        font-size: 12px;
+        padding-top: 3px;
+    }
+    img {
+        display: none;
+        background-color: transparent;
+    }
   }
-  
-  .nav-item {
-    display: inline;
-    margin-left: 2rem;
-    color: red;
-  }
-  
-  .nav-item:hover {
-    color: black;
-    cursor: pointer;
-  }
-  
-  .section-dark {
-    background: #333;
-    color: white;
-  }
-  
-  .section-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px;
-  }
+}
+hr {
+  margin-top: 13px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hr {
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: 0.5s;
+}
+
+.none-active {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  transform: scale(0);
+}
