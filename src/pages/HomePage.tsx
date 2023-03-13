@@ -3,6 +3,7 @@ import { Establishments } from '../components/Establishments'
 import { useAppDispatch, useAppSelector } from '../hooks/hooks'
 import {useEffect} from 'react'
 import { uploadEstablishments } from '../store/redusers/establishments/establishmentsAction'
+import { Authorization } from './Authorization'
 import { DeliveryTerms } from '../components/DeliveryTerms'
 
 export const HomePage = () => {
@@ -28,6 +29,15 @@ export const HomePage = () => {
                 {establishments.map((item) => (
                  <Establishments key={item._id} establishments={item}/>
                 ))}
+            </div>
+            <div className='sig-in'>
+                <Authorization/>
+            </div>
+            <div className='sig-in'>
+                <Authorization/>
+            </div>
+            <div>
+                
             </div>
             <div>
                 

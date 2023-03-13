@@ -10,14 +10,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-*{
+* {
   font-family: "Gilroy";
-  background: linear-gradient(360deg, #211F20 0%, #44403F 100%);
 }
 
-p {
-  padding-top: 50px;
-  font-size: 30px;
+body {
+  background-color: #211F20;
 }
 
 .green-block-and-text {
