@@ -10,15 +10,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-span {
-  color: red;
-  font-size: 30px;
+* {
   font-family: "Gilroy";
 }
 
-p {
-  padding-top: 50px;
-  font-size: 30px;
+body {
+  background-color: #211F20;
 }
 
 .green-block-and-text {
@@ -51,6 +48,169 @@ img {
   border-radius: 10px;
 }
 
+.authorization-form {
+  max-width: 750px;
+  margin: auto;
+  background: -webkit-gradient(linear, left top, right top, from(#494544), to(#504B4A));
+  background: -o-linear-gradient(left, #494544 0%, #504B4A 100%);
+  background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 70px;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+.authorization-form h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 54px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+.authorization-form .email-block {
+  padding-top: 50px;
+}
+.authorization-form .email-block .email {
+  padding-right: 240px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.authorization-form .email-block .input-email {
+  width: 440px;
+  height: 52px;
+  background: #504B4A;
+  border: 1px solid #706F6F;
+  border-radius: 15px;
+  color: #FFFFFF;
+  padding-left: 10px;
+  margin-top: 16px;
+}
+.authorization-form .password-block {
+  padding-top: 22px;
+}
+.authorization-form .password-block .password {
+  padding-right: 350px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.authorization-form .password-block .input-password {
+  width: 440px;
+  height: 52px;
+  background: #504B4A;
+  border: 1px solid #706F6F;
+  border-radius: 15px;
+  color: #FFFFFF;
+  padding-left: 10px;
+  margin-top: 16px;
+}
+.authorization-form .active {
+  width: 247px;
+  height: 60px;
+  border: 1px solid #6A6A6A;
+  background: -o-linear-gradient(335.07deg, #618967 5.11%, #72A479 94%);
+  background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+  border-radius: 10px;
+  margin-top: 32px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.authorization-form .active:active {
+  background: -o-linear-gradient(335.07deg, #a1b35c 5.11%, #bdea0a 94%);
+  background: linear-gradient(114.93deg, #a1b35c 5.11%, #bdea0a 94%);
+}
+.authorization-form .no-account-and-register {
+  padding-top: 16px;
+}
+.authorization-form .no-account-and-register .no-account {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.authorization-form .no-account-and-register .register {
+  padding-left: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+.authorization-form .error {
+  padding-top: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #a50b0b;
+}
+
+@media only screen and (max-width: 376px) {
+  .authorization-form {
+    max-width: 375px;
+    margin: auto;
+    background: #211F20;
+    padding: 0px;
+    text-align: center;
+    border-radius: 0px;
+    margin-top: 0px;
+    padding-bottom: 135px;
+    padding-top: 80px;
+  }
+  .authorization-form h1 {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 48px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+  }
+  .authorization-form .email-block {
+    padding-top: 50px;
+  }
+  .authorization-form .email-block .email {
+    padding-right: 0px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+  }
+  .authorization-form .email-block .input-email {
+    width: 311px;
+    height: 52px;
+    background: #504B4A;
+    border: 1px solid #706F6F;
+    border-radius: 15px;
+    color: #FFFFFF;
+    padding-left: 10px;
+    margin-top: 16px;
+  }
+  .authorization-form .password-block {
+    padding-top: 21px;
+  }
+  .authorization-form .password-block .password {
+    padding-right: 0px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+  }
+  .authorization-form .password-block .input-password {
+    width: 311px;
+    height: 52px;
+    background: #504B4A;
+    border: 1px solid #706F6F;
+    border-radius: 15px;
+    color: #FFFFFF;
+    padding-left: 10px;
+    margin-top: 16px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
