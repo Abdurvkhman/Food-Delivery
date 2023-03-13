@@ -4,6 +4,7 @@ import { useAppDispatch, useAppSelector } from '../hooks/hooks'
 import {useEffect} from 'react'
 import { uploadEstablishments } from '../store/redusers/establishments/establishmentsAction'
 import { Authorization } from './Authorization'
+import { DeliveryTerms } from '../components/DeliveryTerms'
 
 export const HomePage = () => {
     const establishments = useAppSelector((state) => state.establishments.establishments);
@@ -17,8 +18,8 @@ export const HomePage = () => {
    },[dispatch])
     
     return(
-        <div className='main-unit'>
-            {/* <div className='green-block-and-text'>
+        <div className='wrapper'>
+            <div className='green-block-and-text'>
                 <div className='green-block'></div>
                 <div>
                     <p>топ заведений по отзывам</p>
@@ -28,9 +29,18 @@ export const HomePage = () => {
                 {establishments.map((item) => (
                  <Establishments key={item._id} establishments={item}/>
                 ))}
-            </div> */}
+            </div>
             <div className='sig-in'>
                 <Authorization/>
+            </div>
+            <div className='sig-in'>
+                <Authorization/>
+            </div>
+            <div>
+                
+            </div>
+            <div>
+                
             </div>
         </div>
     )

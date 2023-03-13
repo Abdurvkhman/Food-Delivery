@@ -3,6 +3,8 @@
 @import '../assets/fonts/stylesheet.css';
 @import '_home-page';
 @import '_establishments.scss';
+@import '_delivery-terms.scss';
+
 @import '_authorization.scss';
 @import '_authorization-form.scss';
 *{
@@ -10,3 +12,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+@import '_index';
+@import '_App';
+@import '../assets/fonts/stylesheet.css';
+@import '_header';
+@import '_nav-menu';
